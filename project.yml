@@ -1,0 +1,58 @@
+name: DisplayPro
+options:
+  bundleIdPrefix: com.displaypro
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15.0"
+  groupSortPosition: top
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    ENABLE_HARDENED_RUNTIME: YES
+    ENABLE_APP_SANDBOX: NO
+    ALWAYS_SEARCH_USER_PATHS: NO
+    CLANG_ENABLE_MODULES: YES
+
+targets:
+  DisplayPro:
+    type: application
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: DisplayPro
+        excludes:
+          - "**/*.md"
+    resources:
+      - path: DisplayPro/Resources/Assets.xcassets
+    info:
+      path: DisplayPro/Resources/Info.plist
+      properties:
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        LSMinimumSystemVersion: "13.0"
+        LSUIElement: true
+        NSHumanReadableCopyright: "Copyright © 2024 DisplayPro. All rights reserved."
+    entitlements:
+      path: DisplayPro.entitlements
+      properties:
+        com.apple.security.app-sandbox: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.displaypro.app
+        INFOPLIST_FILE: DisplayPro/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: DisplayPro.entitlements
+        ENABLE_APP_SANDBOX: NO
+        OTHER_LDFLAGS:
+          - "-framework IOKit"
+          - "-framework ColorSync"
+          - "-framework CoreDisplay"
+          - "-framework ApplicationServices"
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+        SWIFT_OBJC_BRIDGING_HEADER: "DisplayPro/DisplayPro-Bridging-Header.h"
+    dependencies:
+      - sdk: Cocoa.framework
+      - sdk: IOKit.framework
+      - sdk: ColorSync.framework

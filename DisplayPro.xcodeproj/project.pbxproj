@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001F26F29DE1199E783ED13A /* DisplayHardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B141CAD9D556F6C6848D /* DisplayHardware.swift */; };
+		0988E153B69943D92918D1EF /* ColorProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987517BE7C8FA00F4FD34322 /* ColorProfileController.swift */; };
+		0B161CAB51497A73C8818AA8 /* BrightnessState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D07938AC791932FC6AE0A3 /* BrightnessState.swift */; };
+		1522A6D06C2B7E13D22DF9FA /* BrightnessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F79F234BFFFC5AD0F79DD52 /* BrightnessController.swift */; };
+		26D585D8CF071992F53A0582 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A84803A3759823EC39B890 /* SettingsView.swift */; };
+		2D4CC7A138272F80F7949DA8 /* LayoutCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C462C689059047AC105FE536 /* LayoutCanvasView.swift */; };
+		30CAC44CA5A3BF2E42114A14 /* DisplayPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E39A64E2E7CB1F7962A23 /* DisplayPanelView.swift */; };
+		315D2E03B4B532AAC2D90D55 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB67DB66EA1926D376BF5233 /* MenuBarView.swift */; };
+		37B962A4F0F712D1C8ABF3A5 /* ResolutionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8FBAB47EB9AEC14BBCC579 /* ResolutionMode.swift */; };
+		46860B4E25AD7B77AA2E8234 /* CGVirtualDisplayBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EB78BA2AD46EA55128415 /* CGVirtualDisplayBridge.swift */; };
+		46910C0AAF58383FB0DA2580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4375B3068F0FB1B97421DB /* AppDelegate.swift */; };
+		4EE2FCB6048322DECA45C81D /* LayoutEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC5273334E5B8C771C9943 /* LayoutEditorView.swift */; };
+		53B39E9F54CFFF5FDAFBC1DB /* Logger+DisplayPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FD834DEBC88E67D7945507 /* Logger+DisplayPro.swift */; };
+		53DFD886263330F9C53A25ED /* ResolutionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40D8636CD696A97B8B7C24C /* ResolutionPickerView.swift */; };
+		56AD6A2C750E29F3CE55742E /* InputSourcePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A26DE129C63E732F4FC023 /* InputSourcePickerView.swift */; };
+		5AE6031324F6C5AB7AE88455 /* ColorProfilePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481DCF3608C6AB7C6AC4158B /* ColorProfilePickerView.swift */; };
+		5AF0DA0524668A125A80D886 /* VCPCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3409C61A9E5564F976F05B32 /* VCPCode.swift */; };
+		603A36CC4DA5A7695E6DAC7D /* CoreDisplayBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EE65CCF4F83DE18CCD4F3A /* CoreDisplayBridge.swift */; };
+		7413EC8B4CFBCF6A8F5FD81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927716BB72DC2E821ECEDFD0 /* Assets.xcassets */; };
+		7BF797983F75BF3FDAFBA302 /* DisplayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BB3CF6EC871F9C3F68D31 /* DisplayInfo.swift */; };
+		7C88D2638D3CFF59148EAE5C /* BrightnessSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832336C447AC524EE4B8C2E5 /* BrightnessSliderView.swift */; };
+		89B6413A26F4EB16ED26E067 /* CGDirectDisplayID+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92EE63D4C5D2EB548DE88E /* CGDirectDisplayID+Extensions.swift */; };
+		91BC74DC23678CF072346563 /* LayoutEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B66682408BDD268367422 /* LayoutEditorViewModel.swift */; };
+		958E2F00E5A09AA43D9CB686 /* DDCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7385C1B425E66F6DD8121B36 /* DDCService.swift */; };
+		9B7097326BA29DFECA9C3500 /* DisplayServicesBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCDC2925B8ACBD0C91FC977 /* DisplayServicesBridge.swift */; };
+		A1569B962CA0C1408F5C8FDF /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C533ABD06A5106DF936B9CA /* AppViewModel.swift */; };
+		AA33F9C98C529CFA1593B00A /* ResolutionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C11FBEE748708A2C0661B3E /* ResolutionController.swift */; };
+		AA524D1E976CE05B926E8727 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77431783717CD93BF835A03 /* SettingsStore.swift */; };
+		B1B1EA8FA61D3A6FD5DB0A37 /* DisplayLayoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE9FB509DFA5E712A3EF22B /* DisplayLayoutService.swift */; };
+		B2687EF349C39DF251E516AD /* DisplayThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDF651D52E4CF41D4AD288 /* DisplayThumbnail.swift */; };
+		B340F66152B893B6CE91FD76 /* ColorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416CB8D8E2D3BC7A30B740B /* ColorProfile.swift */; };
+		B46622AC862786521924CBF4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8798DFBEBF53964F1B553F88 /* Cocoa.framework */; };
+		BF8F80E48DC13588A1148A49 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2EE54396AD90AF17C96705 /* IOKit.framework */; };
+		BF9F545C2D67BBEDED6FFF7B /* DisplayObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8678EDDB19896019DBD8BAAA /* DisplayObserver.swift */; };
+		C8D72D238E474B99C6268FEC /* DDCServiceAppleSilicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60FFDFCD9B88BF53B077E0 /* DDCServiceAppleSilicon.swift */; };
+		CC25B4EF2E3E67116BE6585A /* DisplayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C1D026BE1273E613D76653 /* DisplayViewModel.swift */; };
+		D03427BBFBB562C427BB47D9 /* DisplayDragProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9582161A894CBDEC062BA2 /* DisplayDragProxy.swift */; };
+		D306369B0E786624CA576F97 /* ColorSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26393904E0E74A8E7847F3AD /* ColorSync.framework */; };
+		EBA8C5E9260D0BA6BEE38EAF /* DisplayProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79E6D9913FE365684EFF3F1 /* DisplayProApp.swift */; };
+		F06B7BC1F13FC8216B7971EA /* DDCServiceIntel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5770E8D1CECB404609B78C9 /* DDCServiceIntel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26393904E0E74A8E7847F3AD /* ColorSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ColorSync.framework; path = System/Library/Frameworks/ColorSync.framework; sourceTree = SDKROOT; };
+		2ABC5273334E5B8C771C9943 /* LayoutEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutEditorView.swift; sourceTree = "<group>"; };
+		2D3B66682408BDD268367422 /* LayoutEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutEditorViewModel.swift; sourceTree = "<group>"; };
+		30A26DE129C63E732F4FC023 /* InputSourcePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSourcePickerView.swift; sourceTree = "<group>"; };
+		3409C61A9E5564F976F05B32 /* VCPCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPCode.swift; sourceTree = "<group>"; };
+		3D2EE54396AD90AF17C96705 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		408E39A64E2E7CB1F7962A23 /* DisplayPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPanelView.swift; sourceTree = "<group>"; };
+		481DCF3608C6AB7C6AC4158B /* ColorProfilePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProfilePickerView.swift; sourceTree = "<group>"; };
+		5C11FBEE748708A2C0661B3E /* ResolutionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionController.swift; sourceTree = "<group>"; };
+		5FCDC2925B8ACBD0C91FC977 /* DisplayServicesBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayServicesBridge.swift; sourceTree = "<group>"; };
+		70C1D026BE1273E613D76653 /* DisplayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewModel.swift; sourceTree = "<group>"; };
+		7385C1B425E66F6DD8121B36 /* DDCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDCService.swift; sourceTree = "<group>"; };
+		7C2EB78BA2AD46EA55128415 /* CGVirtualDisplayBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVirtualDisplayBridge.swift; sourceTree = "<group>"; };
+		7C533ABD06A5106DF936B9CA /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		7CEDF651D52E4CF41D4AD288 /* DisplayThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayThumbnail.swift; sourceTree = "<group>"; };
+		7F4375B3068F0FB1B97421DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8254B44FFDAA16C30509EBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		832336C447AC524EE4B8C2E5 /* BrightnessSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessSliderView.swift; sourceTree = "<group>"; };
+		84C38C35A583EA7347BC5D47 /* DisplayPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisplayPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8678EDDB19896019DBD8BAAA /* DisplayObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayObserver.swift; sourceTree = "<group>"; };
+		8798DFBEBF53964F1B553F88 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		88EE65CCF4F83DE18CCD4F3A /* CoreDisplayBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDisplayBridge.swift; sourceTree = "<group>"; };
+		8B9582161A894CBDEC062BA2 /* DisplayDragProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDragProxy.swift; sourceTree = "<group>"; };
+		8C92EE63D4C5D2EB548DE88E /* CGDirectDisplayID+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGDirectDisplayID+Extensions.swift"; sourceTree = "<group>"; };
+		8F79F234BFFFC5AD0F79DD52 /* BrightnessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessController.swift; sourceTree = "<group>"; };
+		927716BB72DC2E821ECEDFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		987517BE7C8FA00F4FD34322 /* ColorProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProfileController.swift; sourceTree = "<group>"; };
+		9D14BA5DFFFD92547654196A /* DisplayPro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DisplayPro-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5FD834DEBC88E67D7945507 /* Logger+DisplayPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+DisplayPro.swift"; sourceTree = "<group>"; };
+		A77431783717CD93BF835A03 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		ABE9FB509DFA5E712A3EF22B /* DisplayLayoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLayoutService.swift; sourceTree = "<group>"; };
+		B416CB8D8E2D3BC7A30B740B /* ColorProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProfile.swift; sourceTree = "<group>"; };
+		C29BB3CF6EC871F9C3F68D31 /* DisplayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayInfo.swift; sourceTree = "<group>"; };
+		C462C689059047AC105FE536 /* LayoutCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCanvasView.swift; sourceTree = "<group>"; };
+		CA8FBAB47EB9AEC14BBCC579 /* ResolutionMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionMode.swift; sourceTree = "<group>"; };
+		CE60FFDFCD9B88BF53B077E0 /* DDCServiceAppleSilicon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDCServiceAppleSilicon.swift; sourceTree = "<group>"; };
+		D5A84803A3759823EC39B890 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E40D8636CD696A97B8B7C24C /* ResolutionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionPickerView.swift; sourceTree = "<group>"; };
+		E5770E8D1CECB404609B78C9 /* DDCServiceIntel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDCServiceIntel.swift; sourceTree = "<group>"; };
+		E6C5B141CAD9D556F6C6848D /* DisplayHardware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHardware.swift; sourceTree = "<group>"; };
+		F79E6D9913FE365684EFF3F1 /* DisplayProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayProApp.swift; sourceTree = "<group>"; };
+		F9D07938AC791932FC6AE0A3 /* BrightnessState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessState.swift; sourceTree = "<group>"; };
+		FB67DB66EA1926D376BF5233 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1896BA0E3C2C63E1B085F019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46622AC862786521924CBF4 /* Cocoa.framework in Frameworks */,
+				BF8F80E48DC13588A1148A49 /* IOKit.framework in Frameworks */,
+				D306369B0E786624CA576F97 /* ColorSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B37422A1C58DC1F75566035 /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				5793192C27F6577A6BF0062E /* DDC */,
+				4BE307BB7A430240EB45F5E0 /* PrivateAPI */,
+				8F79F234BFFFC5AD0F79DD52 /* BrightnessController.swift */,
+				987517BE7C8FA00F4FD34322 /* ColorProfileController.swift */,
+				E6C5B141CAD9D556F6C6848D /* DisplayHardware.swift */,
+				5C11FBEE748708A2C0661B3E /* ResolutionController.swift */,
+			);
+			path = Hardware;
+			sourceTree = "<group>";
+		};
+		0F7659970875F1FAB68E9A0C /* DisplayPro */ = {
+			isa = PBXGroup;
+			children = (
+				40C6FB142713BED824CEEA18 /* App */,
+				0B37422A1C58DC1F75566035 /* Hardware */,
+				54DF4802437176BCF9013CE5 /* Models */,
+				51C69D1B316F90FF5477C2CD /* Resources */,
+				EB09C2767300050946980D81 /* Services */,
+				58FD5DDEB8F75F31DD4FC9F4 /* Support */,
+				C8E8CA15B51C07E69A808D37 /* UI */,
+				ED67FCEA198062D87CF650DE /* ViewModels */,
+				9D14BA5DFFFD92547654196A /* DisplayPro-Bridging-Header.h */,
+			);
+			path = DisplayPro;
+			sourceTree = "<group>";
+		};
+		1381C5D4F89D407152E82E04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C92EE63D4C5D2EB548DE88E /* CGDirectDisplayID+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		17A85214373B45576953F736 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				A5FD834DEBC88E67D7945507 /* Logger+DisplayPro.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		40C6FB142713BED824CEEA18 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7F4375B3068F0FB1B97421DB /* AppDelegate.swift */,
+				F79E6D9913FE365684EFF3F1 /* DisplayProApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4BE307BB7A430240EB45F5E0 /* PrivateAPI */ = {
+			isa = PBXGroup;
+			children = (
+				7C2EB78BA2AD46EA55128415 /* CGVirtualDisplayBridge.swift */,
+				88EE65CCF4F83DE18CCD4F3A /* CoreDisplayBridge.swift */,
+				5FCDC2925B8ACBD0C91FC977 /* DisplayServicesBridge.swift */,
+			);
+			path = PrivateAPI;
+			sourceTree = "<group>";
+		};
+		51C69D1B316F90FF5477C2CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				927716BB72DC2E821ECEDFD0 /* Assets.xcassets */,
+				8254B44FFDAA16C30509EBFC /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		54DF4802437176BCF9013CE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9D07938AC791932FC6AE0A3 /* BrightnessState.swift */,
+				B416CB8D8E2D3BC7A30B740B /* ColorProfile.swift */,
+				C29BB3CF6EC871F9C3F68D31 /* DisplayInfo.swift */,
+				CA8FBAB47EB9AEC14BBCC579 /* ResolutionMode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5793192C27F6577A6BF0062E /* DDC */ = {
+			isa = PBXGroup;
+			children = (
+				7385C1B425E66F6DD8121B36 /* DDCService.swift */,
+				CE60FFDFCD9B88BF53B077E0 /* DDCServiceAppleSilicon.swift */,
+				E5770E8D1CECB404609B78C9 /* DDCServiceIntel.swift */,
+				3409C61A9E5564F976F05B32 /* VCPCode.swift */,
+			);
+			path = DDC;
+			sourceTree = "<group>";
+		};
+		58FD5DDEB8F75F31DD4FC9F4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1381C5D4F89D407152E82E04 /* Extensions */,
+				17A85214373B45576953F736 /* Logging */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		5E2EE5D43E57A206C5C9FD7B = {
+			isa = PBXGroup;
+			children = (
+				0F7659970875F1FAB68E9A0C /* DisplayPro */,
+				C7A7487B0A645913B954307B /* Frameworks */,
+				70F34C6E94EE9DFB15834B2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6095DE11E7C1FA8460D8F3AD /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				FB67DB66EA1926D376BF5233 /* MenuBarView.swift */,
+				D5A84803A3759823EC39B890 /* SettingsView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		70F34C6E94EE9DFB15834B2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C38C35A583EA7347BC5D47 /* DisplayPro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93452DE63185D95A4096CAFE /* DisplayPanel */ = {
+			isa = PBXGroup;
+			children = (
+				832336C447AC524EE4B8C2E5 /* BrightnessSliderView.swift */,
+				481DCF3608C6AB7C6AC4158B /* ColorProfilePickerView.swift */,
+				408E39A64E2E7CB1F7962A23 /* DisplayPanelView.swift */,
+				30A26DE129C63E732F4FC023 /* InputSourcePickerView.swift */,
+				E40D8636CD696A97B8B7C24C /* ResolutionPickerView.swift */,
+			);
+			path = DisplayPanel;
+			sourceTree = "<group>";
+		};
+		B9F5EF1F48637B42A0D7F16B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7CEDF651D52E4CF41D4AD288 /* DisplayThumbnail.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C7A7487B0A645913B954307B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8798DFBEBF53964F1B553F88 /* Cocoa.framework */,
+				26393904E0E74A8E7847F3AD /* ColorSync.framework */,
+				3D2EE54396AD90AF17C96705 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8E8CA15B51C07E69A808D37 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B9F5EF1F48637B42A0D7F16B /* Components */,
+				93452DE63185D95A4096CAFE /* DisplayPanel */,
+				DF959780AD30DC4BBEC6AFF4 /* LayoutEditor */,
+				6095DE11E7C1FA8460D8F3AD /* MenuBar */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DF959780AD30DC4BBEC6AFF4 /* LayoutEditor */ = {
+			isa = PBXGroup;
+			children = (
+				8B9582161A894CBDEC062BA2 /* DisplayDragProxy.swift */,
+				C462C689059047AC105FE536 /* LayoutCanvasView.swift */,
+				2ABC5273334E5B8C771C9943 /* LayoutEditorView.swift */,
+			);
+			path = LayoutEditor;
+			sourceTree = "<group>";
+		};
+		EB09C2767300050946980D81 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ABE9FB509DFA5E712A3EF22B /* DisplayLayoutService.swift */,
+				8678EDDB19896019DBD8BAAA /* DisplayObserver.swift */,
+				A77431783717CD93BF835A03 /* SettingsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ED67FCEA198062D87CF650DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7C533ABD06A5106DF936B9CA /* AppViewModel.swift */,
+				70C1D026BE1273E613D76653 /* DisplayViewModel.swift */,
+				2D3B66682408BDD268367422 /* LayoutEditorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECD3272069FCB20D21E2CF6B /* DisplayPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F49A44E8ABBD5350BB326F /* Build configuration list for PBXNativeTarget "DisplayPro" */;
+			buildPhases = (
+				6AFFEB515F98D13868F6FE7F /* Sources */,
+				FD5D67A00728E7E284E1E6DE /* Resources */,
+				1896BA0E3C2C63E1B085F019 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DisplayPro;
+			packageProductDependencies = (
+			);
+			productName = DisplayPro;
+			productReference = 84C38C35A583EA7347BC5D47 /* DisplayPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7958378422289CA57A23EFCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = F869CF305C5BE7C4AB1C7BF0 /* Build configuration list for PBXProject "DisplayPro" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5E2EE5D43E57A206C5C9FD7B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 70F34C6E94EE9DFB15834B2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECD3272069FCB20D21E2CF6B /* DisplayPro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD5D67A00728E7E284E1E6DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7413EC8B4CFBCF6A8F5FD81B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AFFEB515F98D13868F6FE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46910C0AAF58383FB0DA2580 /* AppDelegate.swift in Sources */,
+				A1569B962CA0C1408F5C8FDF /* AppViewModel.swift in Sources */,
+				1522A6D06C2B7E13D22DF9FA /* BrightnessController.swift in Sources */,
+				7C88D2638D3CFF59148EAE5C /* BrightnessSliderView.swift in Sources */,
+				0B161CAB51497A73C8818AA8 /* BrightnessState.swift in Sources */,
+				89B6413A26F4EB16ED26E067 /* CGDirectDisplayID+Extensions.swift in Sources */,
+				46860B4E25AD7B77AA2E8234 /* CGVirtualDisplayBridge.swift in Sources */,
+				B340F66152B893B6CE91FD76 /* ColorProfile.swift in Sources */,
+				0988E153B69943D92918D1EF /* ColorProfileController.swift in Sources */,
+				5AE6031324F6C5AB7AE88455 /* ColorProfilePickerView.swift in Sources */,
+				603A36CC4DA5A7695E6DAC7D /* CoreDisplayBridge.swift in Sources */,
+				958E2F00E5A09AA43D9CB686 /* DDCService.swift in Sources */,
+				C8D72D238E474B99C6268FEC /* DDCServiceAppleSilicon.swift in Sources */,
+				F06B7BC1F13FC8216B7971EA /* DDCServiceIntel.swift in Sources */,
+				D03427BBFBB562C427BB47D9 /* DisplayDragProxy.swift in Sources */,
+				001F26F29DE1199E783ED13A /* DisplayHardware.swift in Sources */,
+				7BF797983F75BF3FDAFBA302 /* DisplayInfo.swift in Sources */,
+				B1B1EA8FA61D3A6FD5DB0A37 /* DisplayLayoutService.swift in Sources */,
+				BF9F545C2D67BBEDED6FFF7B /* DisplayObserver.swift in Sources */,
+				30CAC44CA5A3BF2E42114A14 /* DisplayPanelView.swift in Sources */,
+				EBA8C5E9260D0BA6BEE38EAF /* DisplayProApp.swift in Sources */,
+				9B7097326BA29DFECA9C3500 /* DisplayServicesBridge.swift in Sources */,
+				B2687EF349C39DF251E516AD /* DisplayThumbnail.swift in Sources */,
+				CC25B4EF2E3E67116BE6585A /* DisplayViewModel.swift in Sources */,
+				56AD6A2C750E29F3CE55742E /* InputSourcePickerView.swift in Sources */,
+				2D4CC7A138272F80F7949DA8 /* LayoutCanvasView.swift in Sources */,
+				4EE2FCB6048322DECA45C81D /* LayoutEditorView.swift in Sources */,
+				91BC74DC23678CF072346563 /* LayoutEditorViewModel.swift in Sources */,
+				53B39E9F54CFFF5FDAFBC1DB /* Logger+DisplayPro.swift in Sources */,
+				315D2E03B4B532AAC2D90D55 /* MenuBarView.swift in Sources */,
+				AA33F9C98C529CFA1593B00A /* ResolutionController.swift in Sources */,
+				37B962A4F0F712D1C8ABF3A5 /* ResolutionMode.swift in Sources */,
+				53DFD886263330F9C53A25ED /* ResolutionPickerView.swift in Sources */,
+				AA524D1E976CE05B926E8727 /* SettingsStore.swift in Sources */,
+				26D585D8CF071992F53A0582 /* SettingsView.swift in Sources */,
+				5AF0DA0524668A125A80D886 /* VCPCode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D99D80F575933263B12A04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DisplayPro.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = DisplayPro/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_LDFLAGS = (
+					"-framework IOKit",
+					"-framework ColorSync",
+					"-framework CoreDisplay",
+					"-framework ApplicationServices",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.displaypro.app;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "DisplayPro/DisplayPro-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		25E316478B2D3F1D7F1CFC0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DisplayPro.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = DisplayPro/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_LDFLAGS = (
+					"-framework IOKit",
+					"-framework ColorSync",
+					"-framework CoreDisplay",
+					"-framework ApplicationServices",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.displaypro.app;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "DisplayPro/DisplayPro-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		2E6B401231E46E5AB22E1A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		6C07136560CCD17669FB35D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72F49A44E8ABBD5350BB326F /* Build configuration list for PBXNativeTarget "DisplayPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D99D80F575933263B12A04D /* Debug */,
+				25E316478B2D3F1D7F1CFC0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F869CF305C5BE7C4AB1C7BF0 /* Build configuration list for PBXProject "DisplayPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C07136560CCD17669FB35D8 /* Debug */,
+				2E6B401231E46E5AB22E1A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7958378422289CA57A23EFCA /* Project object */;
+}
