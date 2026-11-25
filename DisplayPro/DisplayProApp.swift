@@ -6,6 +6,12 @@ struct DisplayProApp: App {
 
     @StateObject private var manager = DisplayManager()
 
+    init() {
+        DispatchQueue.main.async {
+            MainActor.assumeIsolated { WindowFeatures.shared.start() }
+        }
+    }
+
     var body: some Scene {
         MenuBarExtra {
             MenuContentView(manager: manager)
@@ -78,6 +84,10 @@ struct MenuContentView: View {
             .toggleStyle(.switch)
             .controlSize(.small)
             .help("Prevent the display from going to sleep")
+
+            Divider()
+
+            WindowFeaturesSection()
 
             Divider()
 

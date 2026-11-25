@@ -19,6 +19,11 @@ struct MenuBarView: View {
             keepAwakeRow
 
             Divider()
+            WindowFeaturesSection()
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+
+            Divider()
             footerView
         }
         .frame(width: 320)

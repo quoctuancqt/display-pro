@@ -10,12 +10,16 @@ APP_NAME="DisplayPro"
 SRC_DIR="DisplayPro"
 BUILD_DIR="build"
 APP_BUNDLE="${BUILD_DIR}/${APP_NAME}.app"
-MIN_OS="13.0"
+MIN_OS="14.0"  # ScreenCaptureKit window screenshots need macOS 14
 ARCH_TARGET="arm64-apple-macos${MIN_OS}"
 
 rm -rf "${BUILD_DIR}"
 mkdir -p "${APP_BUNDLE}/Contents/MacOS"
 mkdir -p "${APP_BUNDLE}/Contents/Resources"
+
+# Dock Preview + ⌘Tab window switcher sources.
+WF_SOURCES=()
+while IFS= read -r f; do WF_SOURCES+=("$f"); done < <(find "${SRC_DIR}/WindowFeatures" -name '*.swift' | sort)
 
 # 1. Compile.
 swiftc \
@@ -26,9 +30,13 @@ swiftc \
     "${SRC_DIR}/DisplayManager.swift" \
     "${SRC_DIR}/Services/WakeController.swift" \
     "${SRC_DIR}/DisplayProApp.swift" \
+    "${WF_SOURCES[@]}" \
     -framework SwiftUI \
     -framework AppKit \
     -framework CoreGraphics \
+    -framework ApplicationServices \
+    -framework ScreenCaptureKit \
+    -framework Carbon \
     -o "${APP_BUNDLE}/Contents/MacOS/${APP_NAME}"
 
 # 2. Bundle metadata.

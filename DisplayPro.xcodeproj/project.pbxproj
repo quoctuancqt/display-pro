@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C144F8CB05D4111CD4D7232 /* WindowFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C84B24E567DABCCB45A47A /* WindowFeatures.swift */; };
+		0DA8F32BFFF1A7CAFD47B6EC /* WindowFeaturesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BFD92BCA5B1C533AB130AA /* WindowFeaturesSection.swift */; };
+		9F2323DFB72B75EE9175CDB4 /* AXHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20CD9FDE7E88663D0125A1C /* AXHelpers.swift */; };
+		D1EF676644E75BF75E804B8E /* OverlayPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259A080F9CE38B12C23E4CF6 /* OverlayPanel.swift */; };
+		0C0608F83816CDCCF666C6B4 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A2FA3857C11DDA4B12921F /* Permissions.swift */; };
+		799AD0237894AC41C96278F8 /* Thumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74119207054F412AF1D9C56E /* Thumbnails.swift */; };
+		248AD73146EC11FD39011132 /* WindowFocuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365EE934EE6DE82ECD21467A /* WindowFocuser.swift */; };
+		641460925C48863FD953639A /* WindowInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F95E62101AB22DB9811D15 /* WindowInfo.swift */; };
+		CD7FE321F2FB5F68AC08EA69 /* WindowInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AB77CA01B22B7BA3245BE /* WindowInventory.swift */; };
+		647C397C776B36285204C05F /* WindowSPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB1114CD1A01962DEDC6A2 /* WindowSPI.swift */; };
+		D78D88112AD411CC1AB4A715 /* DockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E64D5C5B24EFFC6D42EF9E /* DockObserver.swift */; };
+		04F930AC18F9E2645DEF479D /* DockPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796555A0C79FF8BCBA2A0367 /* DockPreviewController.swift */; };
+		F426F9F7FC42E6B96325FDEF /* DockPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB765A867CCD68F0B95843 /* DockPreviewView.swift */; };
+		FD10C17D6E5C00855200954C /* WindowPeekOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372878E98771C60718231F9 /* WindowPeekOverlay.swift */; };
+		035603FC5F9EF8742203446D /* SwitcherHotkeyTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E7CD5FD31B70AD900C949 /* SwitcherHotkeyTap.swift */; };
+		686A6CD3E7B72BDF3C8B2AB2 /* WindowSwitcherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34666C770B81AD5F91FB74 /* WindowSwitcherController.swift */; };
+		2B9C925418BF60C5F2A5286F /* WindowSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9AEF42BA321EC1A164C90 /* WindowSwitcherView.swift */; };
 		001F26F29DE1199E783ED13A /* DisplayHardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B141CAD9D556F6C6848D /* DisplayHardware.swift */; };
 		0988E153B69943D92918D1EF /* ColorProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987517BE7C8FA00F4FD34322 /* ColorProfileController.swift */; };
 		0B161CAB51497A73C8818AA8 /* BrightnessState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D07938AC791932FC6AE0A3 /* BrightnessState.swift */; };
@@ -52,6 +69,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02C84B24E567DABCCB45A47A /* WindowFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowFeatures.swift; sourceTree = "<group>"; };
+		C4BFD92BCA5B1C533AB130AA /* WindowFeaturesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowFeaturesSection.swift; sourceTree = "<group>"; };
+		C20CD9FDE7E88663D0125A1C /* AXHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXHelpers.swift; sourceTree = "<group>"; };
+		259A080F9CE38B12C23E4CF6 /* OverlayPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPanel.swift; sourceTree = "<group>"; };
+		92A2FA3857C11DDA4B12921F /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		74119207054F412AF1D9C56E /* Thumbnails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnails.swift; sourceTree = "<group>"; };
+		365EE934EE6DE82ECD21467A /* WindowFocuser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowFocuser.swift; sourceTree = "<group>"; };
+		74F95E62101AB22DB9811D15 /* WindowInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowInfo.swift; sourceTree = "<group>"; };
+		9D3AB77CA01B22B7BA3245BE /* WindowInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowInventory.swift; sourceTree = "<group>"; };
+		2EEB1114CD1A01962DEDC6A2 /* WindowSPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSPI.swift; sourceTree = "<group>"; };
+		61E64D5C5B24EFFC6D42EF9E /* DockObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockObserver.swift; sourceTree = "<group>"; };
+		796555A0C79FF8BCBA2A0367 /* DockPreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockPreviewController.swift; sourceTree = "<group>"; };
+		11FB765A867CCD68F0B95843 /* DockPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockPreviewView.swift; sourceTree = "<group>"; };
+		3372878E98771C60718231F9 /* WindowPeekOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowPeekOverlay.swift; sourceTree = "<group>"; };
+		808E7CD5FD31B70AD900C949 /* SwitcherHotkeyTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherHotkeyTap.swift; sourceTree = "<group>"; };
+		4B34666C770B81AD5F91FB74 /* WindowSwitcherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSwitcherController.swift; sourceTree = "<group>"; };
+		EFE9AEF42BA321EC1A164C90 /* WindowSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSwitcherView.swift; sourceTree = "<group>"; };
 		26393904E0E74A8E7847F3AD /* ColorSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ColorSync.framework; path = System/Library/Frameworks/ColorSync.framework; sourceTree = SDKROOT; };
 		2ABC5273334E5B8C771C9943 /* LayoutEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutEditorView.swift; sourceTree = "<group>"; };
 		2D3B66682408BDD268367422 /* LayoutEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutEditorViewModel.swift; sourceTree = "<group>"; };
@@ -113,6 +147,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E43EFF92743CDBFCB053778 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C20CD9FDE7E88663D0125A1C /* AXHelpers.swift */,
+				259A080F9CE38B12C23E4CF6 /* OverlayPanel.swift */,
+				92A2FA3857C11DDA4B12921F /* Permissions.swift */,
+				74119207054F412AF1D9C56E /* Thumbnails.swift */,
+				365EE934EE6DE82ECD21467A /* WindowFocuser.swift */,
+				74F95E62101AB22DB9811D15 /* WindowInfo.swift */,
+				9D3AB77CA01B22B7BA3245BE /* WindowInventory.swift */,
+				2EEB1114CD1A01962DEDC6A2 /* WindowSPI.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7CF4430A8CC5AC5DF9ED7942 /* DockPreview */ = {
+			isa = PBXGroup;
+			children = (
+				61E64D5C5B24EFFC6D42EF9E /* DockObserver.swift */,
+				796555A0C79FF8BCBA2A0367 /* DockPreviewController.swift */,
+				11FB765A867CCD68F0B95843 /* DockPreviewView.swift */,
+				3372878E98771C60718231F9 /* WindowPeekOverlay.swift */,
+			);
+			path = DockPreview;
+			sourceTree = "<group>";
+		};
+		CB46CCBE0068B078E9BADDFA /* Switcher */ = {
+			isa = PBXGroup;
+			children = (
+				808E7CD5FD31B70AD900C949 /* SwitcherHotkeyTap.swift */,
+				4B34666C770B81AD5F91FB74 /* WindowSwitcherController.swift */,
+				EFE9AEF42BA321EC1A164C90 /* WindowSwitcherView.swift */,
+			);
+			path = Switcher;
+			sourceTree = "<group>";
+		};
+		CBF1FB2829B34080AA0545EF /* WindowFeatures */ = {
+			isa = PBXGroup;
+			children = (
+				9E43EFF92743CDBFCB053778 /* Core */,
+				7CF4430A8CC5AC5DF9ED7942 /* DockPreview */,
+				CB46CCBE0068B078E9BADDFA /* Switcher */,
+				02C84B24E567DABCCB45A47A /* WindowFeatures.swift */,
+				C4BFD92BCA5B1C533AB130AA /* WindowFeaturesSection.swift */,
+			);
+			path = WindowFeatures;
+			sourceTree = "<group>";
+		};
 		0B37422A1C58DC1F75566035 /* Hardware */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +219,7 @@
 				58FD5DDEB8F75F31DD4FC9F4 /* Support */,
 				C8E8CA15B51C07E69A808D37 /* UI */,
 				ED67FCEA198062D87CF650DE /* ViewModels */,
+				CBF1FB2829B34080AA0545EF /* WindowFeatures */,
 				9D14BA5DFFFD92547654196A /* DisplayPro-Bridging-Header.h */,
 			);
 			path = DisplayPro;
@@ -440,6 +523,23 @@
 				53DFD886263330F9C53A25ED /* ResolutionPickerView.swift in Sources */,
 				AA524D1E976CE05B926E8727 /* SettingsStore.swift in Sources */,
 				AA524D1E976CE05B926E8728 /* WakeController.swift in Sources */,
+				4C144F8CB05D4111CD4D7232 /* WindowFeatures.swift in Sources */,
+				0DA8F32BFFF1A7CAFD47B6EC /* WindowFeaturesSection.swift in Sources */,
+				9F2323DFB72B75EE9175CDB4 /* AXHelpers.swift in Sources */,
+				D1EF676644E75BF75E804B8E /* OverlayPanel.swift in Sources */,
+				0C0608F83816CDCCF666C6B4 /* Permissions.swift in Sources */,
+				799AD0237894AC41C96278F8 /* Thumbnails.swift in Sources */,
+				248AD73146EC11FD39011132 /* WindowFocuser.swift in Sources */,
+				641460925C48863FD953639A /* WindowInfo.swift in Sources */,
+				CD7FE321F2FB5F68AC08EA69 /* WindowInventory.swift in Sources */,
+				647C397C776B36285204C05F /* WindowSPI.swift in Sources */,
+				D78D88112AD411CC1AB4A715 /* DockObserver.swift in Sources */,
+				04F930AC18F9E2645DEF479D /* DockPreviewController.swift in Sources */,
+				F426F9F7FC42E6B96325FDEF /* DockPreviewView.swift in Sources */,
+				FD10C17D6E5C00855200954C /* WindowPeekOverlay.swift in Sources */,
+				035603FC5F9EF8742203446D /* SwitcherHotkeyTap.swift in Sources */,
+				686A6CD3E7B72BDF3C8B2AB2 /* WindowSwitcherController.swift in Sources */,
+				2B9C925418BF60C5F2A5286F /* WindowSwitcherView.swift in Sources */,
 				26D585D8CF071992F53A0582 /* SettingsView.swift in Sources */,
 				5AF0DA0524668A125A80D886 /* VCPCode.swift in Sources */,
 			);
@@ -457,7 +557,7 @@
 				ENABLE_APP_SANDBOX = NO;
 				INFOPLIST_FILE = DisplayPro/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				OTHER_LDFLAGS = (
 					"-framework IOKit",
 					"-framework ColorSync",
@@ -479,7 +579,7 @@
 				ENABLE_APP_SANDBOX = NO;
 				INFOPLIST_FILE = DisplayPro/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				OTHER_LDFLAGS = (
 					"-framework IOKit",
 					"-framework ColorSync",
@@ -539,7 +639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -603,7 +703,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
