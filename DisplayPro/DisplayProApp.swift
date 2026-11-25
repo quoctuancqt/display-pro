@@ -62,6 +62,25 @@ struct MenuContentView: View {
 
             Divider()
 
+            Toggle(isOn: $manager.keepAwake) {
+                HStack(spacing: 8) {
+                    Image(systemName: manager.keepAwake ? "cup.and.saucer.fill" : "cup.and.saucer")
+                        .foregroundStyle(manager.keepAwake ? Color.accentColor : Color.secondary)
+
+                    VStack(alignment: .leading, spacing: 1) {
+                        Text("Keep Screen Awake")
+                        Text(manager.keepAwake ? "Display sleep is paused" : "Display sleeps normally")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
+            .toggleStyle(.switch)
+            .controlSize(.small)
+            .help("Prevent the display from going to sleep")
+
+            Divider()
+
             Button {
                 manager.reconnectAll()
             } label: {

@@ -104,14 +104,40 @@ final class DisplayManager: ObservableObject {
     @Published private(set) var displays: [DisplayInfo] = []
     @Published var lastError: String?
 
+    /// Keeps the screen from sleeping while enabled.
+    @Published var keepAwake: Bool = false {
+        didSet {
+            guard keepAwake != oldValue else { return }
+            applyKeepAwake()
+        }
+    }
+
     private let memory = DisplayMemory()
     private var known: [UInt32: KnownDisplay] = [:]
     private var reconfigCallbackInstalled = false
 
+    private let wakeController = WakeController()
+    private let keepAwakeKey = "DisplayPro.keepAwake"
+
     init() {
         known = memory.load()
         installReconfigurationCallback()
+
+        // Restore the keep-awake assertion from the last session
+        if UserDefaults.standard.bool(forKey: keepAwakeKey) {
+            keepAwake = wakeController.setKeepAwake(true)
+        }
+
         refresh()
+    }
+
+    private func applyKeepAwake() {
+        guard wakeController.setKeepAwake(keepAwake) else {
+            // The assertion could not be created — fall back to the off state.
+            keepAwake = false
+            return
+        }
+        UserDefaults.standard.set(keepAwake, forKey: keepAwakeKey)
     }
 
     // MARK: - Enumeration

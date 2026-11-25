@@ -24,6 +24,7 @@ swiftc \
     -parse-as-library \
     -module-name "${APP_NAME}" \
     "${SRC_DIR}/DisplayManager.swift" \
+    "${SRC_DIR}/Services/WakeController.swift" \
     "${SRC_DIR}/DisplayProApp.swift" \
     -framework SwiftUI \
     -framework AppKit \
@@ -38,10 +39,10 @@ cp "${SRC_DIR}/Info.plist" "${APP_BUNDLE}/Contents/Info.plist"
   || /usr/libexec/PlistBuddy -c "Add :CFBundleIdentifier string com.example.${APP_NAME}" "${APP_BUNDLE}/Contents/Info.plist"
 printf 'APPL????' > "${APP_BUNDLE}/Contents/PkgInfo"
 
-# 3. Copy icon file.
-if [ -f "${SRC_DIR}/Resources/DisplayPro.icns" ]; then
-  cp "${SRC_DIR}/Resources/DisplayPro.icns" "${APP_BUNDLE}/Contents/Resources/"
-fi
+# 3. Build the app icon from the .iconset folder and bundle it.
+#    CFBundleIconFile in Info.plist points at this file (by name, no extension).
+./make-icon.sh
+cp "${SRC_DIR}/Resources/DisplayPro.icns" "${APP_BUNDLE}/Contents/Resources/"
 
 # 4. Ad-hoc sign so Gatekeeper lets it launch.
 codesign --force --sign - --entitlements "${SRC_DIR}/${APP_NAME}.entitlements" --options runtime "${APP_BUNDLE}"

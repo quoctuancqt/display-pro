@@ -26,6 +26,7 @@
 		5AF0DA0524668A125A80D886 /* VCPCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3409C61A9E5564F976F05B32 /* VCPCode.swift */; };
 		603A36CC4DA5A7695E6DAC7D /* CoreDisplayBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EE65CCF4F83DE18CCD4F3A /* CoreDisplayBridge.swift */; };
 		7413EC8B4CFBCF6A8F5FD81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927716BB72DC2E821ECEDFD0 /* Assets.xcassets */; };
+		7413EC8B4CFBCF6A8F5FD81C /* DisplayPro.icns in Resources */ = {isa = PBXBuildFile; fileRef = 927716BB72DC2E821ECEDFD1 /* DisplayPro.icns */; };
 		7BF797983F75BF3FDAFBA302 /* DisplayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BB3CF6EC871F9C3F68D31 /* DisplayInfo.swift */; };
 		7C88D2638D3CFF59148EAE5C /* BrightnessSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832336C447AC524EE4B8C2E5 /* BrightnessSliderView.swift */; };
 		89B6413A26F4EB16ED26E067 /* CGDirectDisplayID+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92EE63D4C5D2EB548DE88E /* CGDirectDisplayID+Extensions.swift */; };
@@ -35,6 +36,7 @@
 		A1569B962CA0C1408F5C8FDF /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C533ABD06A5106DF936B9CA /* AppViewModel.swift */; };
 		AA33F9C98C529CFA1593B00A /* ResolutionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C11FBEE748708A2C0661B3E /* ResolutionController.swift */; };
 		AA524D1E976CE05B926E8727 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77431783717CD93BF835A03 /* SettingsStore.swift */; };
+		AA524D1E976CE05B926E8728 /* WakeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77431783717CD93BF835A04 /* WakeController.swift */; };
 		B1B1EA8FA61D3A6FD5DB0A37 /* DisplayLayoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE9FB509DFA5E712A3EF22B /* DisplayLayoutService.swift */; };
 		B2687EF349C39DF251E516AD /* DisplayThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDF651D52E4CF41D4AD288 /* DisplayThumbnail.swift */; };
 		B340F66152B893B6CE91FD76 /* ColorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416CB8D8E2D3BC7A30B740B /* ColorProfile.swift */; };
@@ -76,10 +78,12 @@
 		8C92EE63D4C5D2EB548DE88E /* CGDirectDisplayID+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGDirectDisplayID+Extensions.swift"; sourceTree = "<group>"; };
 		8F79F234BFFFC5AD0F79DD52 /* BrightnessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessController.swift; sourceTree = "<group>"; };
 		927716BB72DC2E821ECEDFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		927716BB72DC2E821ECEDFD1 /* DisplayPro.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DisplayPro.icns; sourceTree = "<group>"; };
 		987517BE7C8FA00F4FD34322 /* ColorProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProfileController.swift; sourceTree = "<group>"; };
 		9D14BA5DFFFD92547654196A /* DisplayPro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DisplayPro-Bridging-Header.h"; sourceTree = "<group>"; };
 		A5FD834DEBC88E67D7945507 /* Logger+DisplayPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+DisplayPro.swift"; sourceTree = "<group>"; };
 		A77431783717CD93BF835A03 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		A77431783717CD93BF835A04 /* WakeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeController.swift; sourceTree = "<group>"; };
 		ABE9FB509DFA5E712A3EF22B /* DisplayLayoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLayoutService.swift; sourceTree = "<group>"; };
 		B416CB8D8E2D3BC7A30B740B /* ColorProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProfile.swift; sourceTree = "<group>"; };
 		C29BB3CF6EC871F9C3F68D31 /* DisplayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayInfo.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				927716BB72DC2E821ECEDFD0 /* Assets.xcassets */,
+				927716BB72DC2E821ECEDFD1 /* DisplayPro.icns */,
 				8254B44FFDAA16C30509EBFC /* Info.plist */,
 			);
 			path = Resources;
@@ -296,6 +301,7 @@
 				ABE9FB509DFA5E712A3EF22B /* DisplayLayoutService.swift */,
 				8678EDDB19896019DBD8BAAA /* DisplayObserver.swift */,
 				A77431783717CD93BF835A03 /* SettingsStore.swift */,
+				A77431783717CD93BF835A04 /* WakeController.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72F49A44E8ABBD5350BB326F /* Build configuration list for PBXNativeTarget "DisplayPro" */;
 			buildPhases = (
+				FD5D67A00728E7E284E1E6DF /* Build App Icon from .iconset */,
 				6AFFEB515F98D13868F6FE7F /* Sources */,
 				FD5D67A00728E7E284E1E6DE /* Resources */,
 				1896BA0E3C2C63E1B085F019 /* Frameworks */,
@@ -368,10 +375,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				7413EC8B4CFBCF6A8F5FD81B /* Assets.xcassets in Resources */,
+				7413EC8B4CFBCF6A8F5FD81C /* DisplayPro.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD5D67A00728E7E284E1E6DF /* Build App Icon from .iconset */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/DisplayPro/DisplayPro.iconset",
+			);
+			name = "Build App Icon from .iconset";
+			outputPaths = (
+				"$(SRCROOT)/DisplayPro/Resources/DisplayPro.icns",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/make-icon.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6AFFEB515F98D13868F6FE7F /* Sources */ = {
@@ -412,6 +439,7 @@
 				37B962A4F0F712D1C8ABF3A5 /* ResolutionMode.swift in Sources */,
 				53DFD886263330F9C53A25ED /* ResolutionPickerView.swift in Sources */,
 				AA524D1E976CE05B926E8727 /* SettingsStore.swift in Sources */,
+				AA524D1E976CE05B926E8728 /* WakeController.swift in Sources */,
 				26D585D8CF071992F53A0582 /* SettingsView.swift in Sources */,
 				5AF0DA0524668A125A80D886 /* VCPCode.swift in Sources */,
 			);
@@ -423,7 +451,7 @@
 		0D99D80F575933263B12A04D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CODE_SIGN_ENTITLEMENTS = DisplayPro.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_APP_SANDBOX = NO;
@@ -445,7 +473,7 @@
 		25E316478B2D3F1D7F1CFC0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CODE_SIGN_ENTITLEMENTS = DisplayPro.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_APP_SANDBOX = NO;

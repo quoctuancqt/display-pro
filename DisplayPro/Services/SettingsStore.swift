@@ -59,6 +59,11 @@ final class SettingsStore {
         set { defaults.set(newValue.rawValue, forKey: "menuBarIconStyle") }
     }
 
+    var keepAwake: Bool {
+        get { defaults.bool(forKey: "keepAwake") }
+        set { defaults.set(newValue, forKey: "keepAwake") }
+    }
+
     var showHiDPIByDefault: Bool {
         get { defaults.object(forKey: "showHiDPIByDefault") == nil ? true : defaults.bool(forKey: "showHiDPIByDefault") }
         set { defaults.set(newValue, forKey: "showHiDPIByDefault") }

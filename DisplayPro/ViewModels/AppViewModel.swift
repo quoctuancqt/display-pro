@@ -8,11 +8,20 @@ final class AppViewModel: ObservableObject {
     @Published var displays: [DisplayViewModel] = []
     @Published var isLoading: Bool = false
 
+    /// Keeps the screen from sleeping while enabled.
+    @Published var keepAwake: Bool = false {
+        didSet {
+            guard keepAwake != oldValue else { return }
+            applyKeepAwake()
+        }
+    }
+
     private let observer: DisplayObserver
     private let brightnessController: BrightnessController
     private let resolutionController: ResolutionController
     private let colorProfileController: ColorProfileController
     private let ddcService: DDCServiceProtocol
+    private let wakeController = WakeController()
     let layoutService: DisplayLayoutService
     let settingsStore: SettingsStore
 
@@ -51,7 +60,21 @@ final class AppViewModel: ObservableObject {
             }
             .store(in: &cancellables)
 
+        // Restore the keep-awake assertion from the last session
+        if settingsStore.keepAwake {
+            keepAwake = wakeController.setKeepAwake(true)
+        }
+
         Task { await refresh() }
+    }
+
+    private func applyKeepAwake() {
+        guard wakeController.setKeepAwake(keepAwake) else {
+            // The assertion could not be created — fall back to the off state.
+            keepAwake = false
+            return
+        }
+        settingsStore.keepAwake = keepAwake
     }
 
     func refresh() async {

@@ -16,6 +16,9 @@ struct MenuBarView: View {
             }
 
             Divider()
+            keepAwakeRow
+
+            Divider()
             footerView
         }
         .frame(width: 320)
@@ -68,6 +71,30 @@ struct MenuBarView: View {
                 .foregroundStyle(.secondary)
         }
         .frame(height: 60)
+    }
+
+    private var keepAwakeRow: some View {
+        Toggle(isOn: $appViewModel.keepAwake) {
+            HStack(spacing: 8) {
+                Image(systemName: appViewModel.keepAwake ? "cup.and.saucer.fill" : "cup.and.saucer")
+                    .font(.system(size: 14))
+                    .foregroundStyle(appViewModel.keepAwake ? Color.accentColor : Color.secondary)
+                    .frame(width: 20)
+
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("Keep Screen Awake")
+                        .font(.system(size: 13, weight: .medium))
+                    Text(appViewModel.keepAwake ? "Display sleep is paused" : "Display sleeps normally")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        }
+        .toggleStyle(.switch)
+        .controlSize(.small)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+        .help("Prevent the display from going to sleep")
     }
 
     private var footerView: some View {
